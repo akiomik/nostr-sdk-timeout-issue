@@ -1,0 +1,14 @@
+Submodule nostr c32d48d..d1930d5:
+diff --git a/nostr/crates/nostr-sdk/src/relay/mod.rs b/nostr/crates/nostr-sdk/src/relay/mod.rs
+index a4b167d..25abbad 100644
+--- a/nostr/crates/nostr-sdk/src/relay/mod.rs
++++ b/nostr/crates/nostr-sdk/src/relay/mod.rs
+@@ -577,7 +577,7 @@ impl Relay {
+                                 break;
+                             }
+                         }
+-                        _ => (),
++                        _ => log::debug!("Receive unhandled message {msg:?} on get_events_of"),
+                     };
+                 }
+             }
