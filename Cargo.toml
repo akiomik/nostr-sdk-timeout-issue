@@ -1,0 +1,9 @@
+[package]
+name = "nostr-sdk-timeout-issue"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+env_logger = "0.10.0"
+nostr-sdk = { path = "nostr/crates/nostr-sdk" }
+tokio = { version = "1", features = ["full"] }
